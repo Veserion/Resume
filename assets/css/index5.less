@@ -1,0 +1,142 @@
+.title {
+  position: absolute;
+  width: 164px;
+  height: 60px;
+  left: calc(50% - 164px / 2);
+  top: 79px;
+
+  /* Heading/2 */
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 175%;
+  /* identical to box height, or 59px */
+  text-align: center;
+
+  /* Heading */
+  color: #680097;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  .contacts {
+    display: block;
+    position: absolute;
+    min-width: 348px;
+    min-height: 241px;
+    width: 20.6vw;
+    height: 20.25vh;
+    right: 4.5vw;
+    top: 17.9vh;
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 174%;
+    letter-spacing: -0.04em;
+    p {
+      font-weight: 500;
+    }
+  }
+  .footer {
+    position: absolute;
+    top: 99vh;
+    width: 91vw;
+    padding-top: 8px;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3.5%;
+    margin: -3% 4.2%;
+    font-family: Fira Code;
+  }
+  .background {
+    width: 64.25vw;
+    height: 100vh;
+    background-image: url(../img/Rectangle6.png);
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1114px) {
+  .title {
+    position: absolute;
+    top: 66px;
+    text-align: center;
+  }
+  .root {
+    .contacts {
+      display: block;
+      position: absolute;
+      min-width: 348px;
+      min-height: 241px;
+      width: 348px;
+      height: auto;
+      right: calc((100vw - 348px) / 2);
+      top: 213px;
+      font-family: Fira Code;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 174%;
+      letter-spacing: -0.04em;
+      p {
+        font-weight: 500;
+      }
+    }
+    .background {
+      display: none;
+    }
+    .footer {
+      position: absolute;
+      z-index: 1;
+      bottom: 3vh;
+      width: 91vw;
+      padding-top: 8px;
+      border-top: 1px solid black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 3.5%;
+      margin: -3% 4.2%;
+      font-family: Fira Code;
+    }
+  }
+  .center {
+    position: absolute;
+    left: calc((100% - 57.6px) / 2);
+  }
+}
+
+@media screen and (max-width: 532px) {
+  .root {
+    .main {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      .left_panel {
+        position: absolute;
+        top: 17.88vh;
+        .text_in_left_panel {
+          max-width: 244px;
+          max-height: 310px;
+          margin: 0px;
+        }
+      }
+    }
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Fira Code;
+    }
+  }
+  .center {
+    position: relative;
+    left: auto;
+  }
+}

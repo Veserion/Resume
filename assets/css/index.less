@@ -1,0 +1,71 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  .main_panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    .title {
+      font-family: Fira Code;
+      font-size: 80px;
+      line-height: 175%;
+    }
+    .subtitle {
+      font-family: Fira Code;
+      font-size: 34px;
+      line-height: 175%;
+    }
+  }
+
+  .bottom_panel {
+    position: absolute;
+    top: 99vh;
+    width: 91vw;
+    padding-top: 8px;
+    border-top: 1px solid black;
+
+    margin-bottom: 3.5%;
+    margin: -3% 4.2%;
+    font-family: Fira Code;
+    .flex_bottom_panel {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .center{
+      position: absolute;
+      margin-left: calc((100% - 57.6px)/2);
+      margin-top: -18.4px;
+    }
+    // .text{
+    //   flex: 1;
+    // }
+    // .text .center{
+    //   flex: 2;
+    // }
+  }
+}
+
+// @media screen and (max-width: 768px) {
+//   .root {
+//     width: 100vw;
+//     height: 100vh;
+//     .main_panel {
+//       .title{
+//         padding-left: 1.43vw;
+//         padding-right: 1.43vw;
+//         padding-top: ;
+//         font-family: Fira Code;
+//         font-style: normal;
+//         font-weight: normal;
+//         font-size: 80px;
+//         line-height: 175%;
+//       }
+//     }
+//   }
+// }

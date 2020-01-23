@@ -1,0 +1,131 @@
+.root {
+  height: 100vh;
+  .main {
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    .main_title {
+      z-index: 2;
+      position: absolute;
+      top: 6.63vh;
+      left: calc((100vw - 163.2px) / 2);
+      font-family: Fira Code;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 34px;
+      line-height: 175%;
+      text-align: center;
+      color: #680097;
+    }
+    .left_panel {
+      padding-top: 18%;
+      flex: 1;
+      .text_in_left_panel {
+        z-index: 1;
+        margin-left: 12%;
+        width: 348px;
+        height: 310px;
+        font-family: Fira Code;
+        font-size: 18px;
+        line-height: 31px;
+        letter-spacing: -1px;
+      }
+    }
+    .right_panel {
+      z-index: 0;
+      height: 130vh;
+      flex: 2;
+      background-image: url(../img/Rectangle5.png);
+      background-size: cover;
+    }
+  }
+
+  .footer {
+    position: relative;
+    z-index: 1;
+    bottom: -0.15vh;
+    width: 91vw;
+    padding-top: 8px;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3.5%;
+    margin: -3% 4.2%;
+    font-family: Fira Code;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    .main {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      .left_panel {
+        position: absolute;
+        top: 17.88vh;
+        .text_in_left_panel {
+          max-width: 348px;
+          max-height: 310px;
+          margin: 0px;
+        }
+      }
+    }
+    .right_panel {
+      display: none;
+    }
+    .footer {
+      position: absolute;
+      z-index: 1;
+      bottom: 3vh;
+      width: 91vw;
+      padding-top: 8px;
+      border-top: 1px solid black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 3.5%;
+      margin: -3% 4.2%;
+      font-family: Fira Code;
+    }
+  }
+  .center {
+    position: absolute;
+    left: calc((100% - 57.6px) / 2);
+  }
+}
+
+@media screen and (max-width: 532px) {
+  .root {
+    .main {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      .left_panel {
+        position: absolute;
+        top: 17.88vh;
+        .text_in_left_panel {
+          max-width: 244px;
+          max-height: 310px;
+          margin: 0px;
+        }
+      }
+    }
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Fira Code;
+    }
+  }
+  .right_panel {
+    display: none;
+  }
+  .center {
+    position: relative;
+    left: auto;
+  }
+}
