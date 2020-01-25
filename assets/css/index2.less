@@ -1,4 +1,5 @@
 .root {
+  min-height: 794px;
   height: 100vh;
   .main {
     z-index: 0;
@@ -99,8 +100,9 @@
 
 @media screen and (max-width: 532px) {
   .root {
+    margin: 0;
     .main {
-      height: 100vh;
+      min-height: 100vh;
       width: 100vw;
       display: flex;
       justify-content: center;
@@ -109,13 +111,16 @@
         top: 17.88vh;
         .text_in_left_panel {
           max-width: 244px;
-          max-height: 310px;
+          max-height: 600px;
+          height: auto;
           margin: 0px;
         }
       }
     }
     .footer {
       display: flex;
+      position: relative;
+      margin-top: -70px;
       flex-direction: column;
       align-items: center;
       font-family: Fira Code;
